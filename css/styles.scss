@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'fonts';
+@import 'media';
 //@import 'animation';
 //@import 'animation_classes';
 * {
@@ -58,12 +59,14 @@ body {
 .contacts {
   text-align:center;
   align-self:center;
-
+  min-width:181px;
 }
 
 .contacts__phone {
   font-size:24px;
   font-weight:bolder;
+  margin-bottom:12px;
+  display:inline-block;
 }
 
 .contacts__worktime {
@@ -116,6 +119,8 @@ body {
   display:flex;
   margin-bottom:39px;
   //padding-left:44px;
+  flex-wrap:wrap;
+  justify-content:space-around;
 
 }
 
@@ -130,13 +135,17 @@ body {
   max-width: 260px;
   width:100%;
   //margin-right:auto;
-  margin-right:24px;
+  //margin-right:24px;
   margin-bottom:39px;
 
+  &:hover {
+    border:1px solid #1A1A1A;
+
+  }
 }
 
 .item-card:nth-of-type(4n) {
-  margin-right:0;
+  //margin-right:0;
 }
 
 .item-card__img {
@@ -160,6 +169,7 @@ body {
 .item-card__img:hover {
   transform:scale(1.1);
   transition:all 0.3s;
+
 }
 
 .item-card__link {
@@ -167,28 +177,60 @@ body {
   font-size:18px;
 }
 
+.item-card_new {
+  position:relative;
+}
+
+.item-card_new:before {
+  content:'Новинка';
+  text-align:center;
+  padding:6px 18px;
+  color:$red-color;
+  border:1px solid $grey-color;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius:3px;
+  position:absolute;
+  left:-1px;top:10px;
+  border-left:none;
+}
+
 
 .footer {
   background-color:$footer-color;
-  padding-top:13px;
-  padding-bottom:20px;
+  padding-top:38px;
+  padding-bottom:40px;
   margin-top:41px;
 }
 
 .footer-bottom {
   display:flex;
-  justify-content:space-between;
+  //justify-content:space-between;
   font-family:$second-font;
   font-size:14px;
   line-height:26px;
 }
 
+.contact-info {
+  margin-left:30px;
+}
+
 .contact-info__header {
-  font-weight:bold;
+  //font-weight:bold;
+  font-size:18px;
+  margin-bottom:1em;
 }
 
 .contact-info__text {
   //margin-bottom:7px;
+}
+
+.footer-contacts__phone {
+  font-size:18px;
+  font-weight:bold;
+}
+
+.footer-contacts__worktime {
+  margin-bottom:2em;
 }
 
 .footer__link-list {
@@ -196,7 +238,9 @@ body {
 }
 
 .social-networks_footer {
-  text-align:left;
+  text-align:center;
+  margin:0 0 0 auto;
+  align-self:center;
 }
 
 .footer__logo {
