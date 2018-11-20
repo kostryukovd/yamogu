@@ -54,6 +54,7 @@ body {
   max-width:590px;
   width:100%;
   padding-bottom:8px;
+  margin-top: -50px;
 }
 
 .contacts {
@@ -90,10 +91,12 @@ body {
 .section-header {
   font-size:48px;
   font-weight:normal;
+  text-align:center;
+  margin-bottom:60px;
 }
 
 .item-filter {
-  margin:50px 0;
+  margin:0 0 50px 0;
     word-spacing:33px;
 }
 
@@ -217,7 +220,7 @@ body {
 .contact-info__header {
   //font-weight:bold;
   font-size:18px;
-  margin-bottom:1em;
+  margin-bottom:18px;//1em;
 }
 
 .contact-info__text {
@@ -230,7 +233,7 @@ body {
 }
 
 .footer-contacts__worktime {
-  margin-bottom:2em;
+  margin-bottom:36px;//2em;
 }
 
 .footer__link-list {
@@ -251,9 +254,14 @@ body {
   text-decoration:underline;
 }
 
+
+//О НАС
+
+
 .bread-crumbs {
   margin:20px 0;
-  margin-left:200px;
+  margin-bottom:62px;
+  //margin-left:200px;
 }
 
 .bread-crumbs__item {
@@ -268,6 +276,180 @@ body {
 
 .bread-crumbs__item:last-child:after {
   content:'';
+}
+
+.text-container {
+  max-width:792px;
+  width:100%;
+  margin:0 auto;
+}
+
+.text-section {
+    margin-bottom:200px;
+
+}
+
+.text-list {
+  list-style:disc;
+  list-style-position: inside;
+}
+
+.text--margin-bottom {
+  margin-bottom:70px;
+}
+
+.text--regular {
+  //margin:30px 0;
+  margin-bottom:30px;
+}
+
+.text--margin-top {
+  margin-top:70px;
+}
+
+.accordion {
+  margin-bottom:30px;
+}
+
+.accordion__divider-line {
+  width:261px;
+  height:1px;
+  background-color:$red-color;
+}
+
+.accordion__header {
+  font-weight:bold;
+  line-height:44px;
+}
+
+.arrow-down {
+  display:inline-block;
+  transition:transform 0.3s;
+}
+
+.arrow-down--rotated {
+  transform:rotate(180deg);
+}
+
+.arrow-down:hover {
+  cursor:pointer;
+}
+
+.accordion__hidden-content {
+  //display:none;
+      max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.card-detail {
+  border: 0.5px solid $grey-color;
+  border-radius: 3px;
+}
+
+.card-detail__text {
+    padding-left:14.3%;
+
+}
+
+.card-detail__header {
+  text-align:left;
+  margin:30px 0;
+}
+
+.card-detail__age-field {
+  color:$grey-text-color;
+  font-size:36px;
+  margin-bottom:30px;
+}
+
+.card-detail__desc {
+  color:$grey-text-color;
+  margin-bottom:27px;
+}
+
+.card-detail__container {
+  display:flex;
+}
+
+.card-detail__container-left {
+  width:30%;
+  margin-left:86px;
+  padding-top:81px;
+  padding-bottom:61px;
+}
+
+.card-detail__carousel {
+  width:257px;
+  height:359px;
+}
+
+.owl-carousel.owl-drag .owl-item {
+  background:$grey-color;
+  height:363px;
+  display:flex;
+  align-items:center;
+  border:1px solid $grey-color;
+}
+
+.owl-carousel .owl-nav .owl-prev {
+  position: absolute;
+  top: 50%;
+  left: -15%;
+  color:$red-color;
+  font-size:40px;
+    margin-top:-20px;
+
+}
+
+.owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  right: -15%;
+    color:$red-color;
+  font-size:40px;
+  margin-top:-20px;
+}
+
+.mfp-counter {
+  display:none;
+}
+
+.card-detail__switch {
+  margin-bottom:60px;
+}
+
+.card-detail__switch-item {
+  display:inline-block;
+  cursor:pointer;
+  padding:0 7px;
+  font-weight:bold;
+  margin-right:90px;
+   border-bottom:1px solid white;
+   padding-bottom:7px;
+}
+
+.card-detail__switch-item--active {
+  border-bottom:1px solid black;
+}
+
+.card-detail__specs {
+  display:flex;
+  justify-content:space-between;
+}
+
+.spec-dots {
+  display:inline-block;
+  width:100%;
+  border-bottom:1px dotted $grey-color;
+}
+
+.card-detail__spec-names {
+  display:flex;
+}
+
+.spec-value {
+  color:$grey-color;
 }
 @import "_media";
 
