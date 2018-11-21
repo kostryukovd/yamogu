@@ -35,6 +35,7 @@ body {
     max-width:1112px;
   width:100%;
   margin:0 auto;
+  //padding:0 15px;
 }
 
 .header {
@@ -294,16 +295,16 @@ body {
   list-style-position: inside;
 }
 
-.text--margin-bottom {
+.text_margin-bottom {
   margin-bottom:70px;
 }
 
-.text--regular {
+.text_regular {
   //margin:30px 0;
   margin-bottom:30px;
 }
 
-.text--margin-top {
+.text_margin-top {
   margin-top:70px;
 }
 
@@ -327,8 +328,9 @@ body {
   transition:transform 0.3s;
 }
 
-.arrow-down--rotated {
+.arrow-down_rotated {
   transform:rotate(180deg);
+  margin-bottom:15px;
 }
 
 .arrow-down:hover {
@@ -345,6 +347,7 @@ body {
 .card-detail {
   border: 0.5px solid $grey-color;
   border-radius: 3px;
+  margin-bottom: 80px;
 }
 
 .card-detail__text {
@@ -370,13 +373,23 @@ body {
 
 .card-detail__container {
   display:flex;
+  justify-content:space-around;
+  flex-wrap:wrap;
 }
 
 .card-detail__container-left {
-  width:30%;
-  margin-left:86px;
+  /*width:30%;
+  margin-left:7%;//86px;
   padding-top:81px;
-  padding-bottom:61px;
+  padding-bottom:61px;*/
+  align-self:center;
+  margin: 0 40px;
+
+    
+  margin-top: 27px;
+}
+.card-detail__container-right {
+margin-top: 27px;
 }
 
 .card-detail__carousel {
@@ -424,33 +437,82 @@ body {
   cursor:pointer;
   padding:0 7px;
   font-weight:bold;
-  margin-right:90px;
+  &:first-child {
+    margin-right:90px;
+  }
    border-bottom:1px solid white;
    padding-bottom:7px;
 }
 
-.card-detail__switch-item--active {
+.card-detail__switch-item_active {
   border-bottom:1px solid black;
+  cursor:default;
 }
 
 .card-detail__specs {
+  //display:flex;
+  //justify-content:left;//space-between;
+  }
+
+.card-detail__spec-row {
   display:flex;
-  justify-content:space-between;
+  justify-content:left;
 }
+
 
 .spec-dots {
   display:inline-block;
-  width:100%;
+  
+  flex-grow:1;
   border-bottom:1px dotted $grey-color;
+    
 }
 
 .card-detail__spec-names {
   display:flex;
+  max-width:210px;
+  justify-content:space-between;
+  overflow:hidden;
+  flex-grow:1;
 }
 
 .spec-value {
   color:$grey-color;
 }
+
+.card-detail__spec-name {
+  background:white;
+
+}
+
+
+.card-detail__spec-value {
+  background:white;
+}
+
+.card-detail__dots {
+  border-bottom:1px dotted $grey-color;
+  flex-grow:1;
+  max-width:150px;
+}
+
+.card-detail__switch-content_hidden {
+  display:none;
+}
+
+.order-section {
+    margin-top:83px;
+
+}
+
+.order-container {
+    border: 0.5px solid $grey-color;
+  border-radius: 3px;
+  padding-top:30px;
+  padding-left:14%;
+
+}
+
 @import "_media";
 
 

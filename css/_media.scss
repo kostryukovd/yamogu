@@ -1,3 +1,24 @@
+/*@media (max-width:1069px) {
+	.item-card:nth-of-type(4n) {
+  margin-right:auto;
+}
+.item-card:nth-of-type(3n) {
+  margin-right:0;
+}
+}
+
+@media (max-width:809px) {
+	.item-card:nth-of-type(3n) {
+  margin-right:auto;
+}
+.item-card:nth-of-type(2n) {
+  margin-right:0;
+}
+}*/
+
+
+
+
 @media (max-width:710px) {
 	.menu {
 		order:2;
