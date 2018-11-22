@@ -5,8 +5,8 @@
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <link href="css/reset.css" type="text/css" rel="stylesheet"/>
+    <link href="css/hamburgers.css" type="text/css" rel="stylesheet"/>
     <link href="css/styles.css" type="text/css" rel="stylesheet"/>
 
 	<title>Я могу</title>
@@ -14,8 +14,10 @@
 </head>
 <body>
 	
-	<div class = "wrapper">
-	<header class = "header page">
+
+<header>
+		<div class="container">
+			<div class = "header">
 		<a class = "header__link" href = "index.html">
 		<img class = "header__logo" src = "img/logo-big.png" alt = "Лого">
 	</a>
@@ -40,7 +42,15 @@
 				</div>
 	
 		</div>
+			<div class = "hamburger hamburger_squeeze">
+				<div class="hamburger-box">
+    				<div class="hamburger-inner"></div>
+ 				 </div>
+			</div>
+	</div>
+	</div>
 	</header>
+
 	
 	<div class = "text-container">
 	<div class = "bread-crumbs">
@@ -52,10 +62,10 @@
 
 	<section class = "text-section">
 		<h1 class = "section-header">КОНТАКТЫ</h1>
-		<p class = "text--regular">Адрес нашего офиса: <b>Посёлок Совхоза им. Ленина, дом 19В, офис 4</b></p>
-		<p class = "text--regular">Телефон: <a href = "tel:+74951420013"><b>8 (495) 142-0013</b></a></p>
-		<p class = "text--regular">Мы работаем в будни <b>с 9-00 до 17-00</b></p>
-		<p class = "text--regular">По вопросам оптового сотрудничества пишите на <a href = "mailto:info@yamogu.ru"><b>info@yamogu.ru</b></a></p>
+		<p class = "text_regular">Адрес нашего офиса: <b>Посёлок Совхоза им. Ленина, дом 19В, офис 4</b></p>
+		<p class = "text_regular">Телефон: <a href = "tel:+74951420013"><b>8 (495) 142-0013</b></a></p>
+		<p class = "text_regular">Мы работаем в будни <b>с 9-00 до 17-00</b></p>
+		<p class = "text_regular">По вопросам оптового сотрудничества пишите на <a href = "mailto:info@yamogu.ru"><b>info@yamogu.ru</b></a></p>
 		
 		<div style = "height:400px;width:100%;background:url('img/map_bkg.png')">
 		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7301a432f90d690dabe69bf4f038afda9946bc13c814f0ce3a29b71ae3216f58&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script> 
@@ -67,13 +77,13 @@
 
 	</section>
 	</div>
- </div>
 
 
-	<footer class = "footer">
-		<div class = "page">
 
-
+	<footer>
+		
+			<div class = "footer">
+				<div class = "container">
 		<div class = "footer-bottom">
 		<div class = "footer__logo">
 			<img src = "img/logo-footer.png" alt = "Лого">
@@ -86,21 +96,11 @@
 				<p class = "footer-contacts__phone">8 (495) 142-0013</p>
 				<p class = "footer-contacts__worktime">По будням с 9 до 17</p>
 				
-				<p class = "contact-info__text">По вопросам заказов: <a href= "mailto:z@yamogu.ru"><b>z@yamogu.ru</b></a></p>
 				<p class = "contact-info__text">По вопросам оптового сотрудничества: <a href = "mailto:opt@yamogu.ru"><b>opt@yamogu.ru</b></a></p>
 				<p class = "contact-info__text">Желаете с нами пообщаться: <a href = "mailto:info@yamogu.ru"><b>info@yamogu.ru</b></a></p>
 			</div>
 
-			<!--<ul class = "footer__link-list">
-				<li><a class = "footer__link" href = "#">Доставка и оплата</a></li>
-				<li><a class = "footer__link" href = "#">Контактная информация</a></li>
-			</ul>
 
-			<ul class = "footer__link-list">
-				<li><a class = "footer__link" href = "#">О компании</a></li>
-				<li><a class = "footer__link" href = "#">Новости</a></li>
-				<li><a class = "footer__link" href = "#">Статьи</a></li>
-			</ul>-->
 
 			<div class = "social-networks social-networks_footer">
 				<p class = "social-networks__header">Присоединяйтесь к нам</p>
@@ -111,55 +111,13 @@
 				<img src="img/vk.png" alt="ВКонтакте">
 					</a>
 				</div>
+		</div>
 		</div>
 		</div>
 	</footer>
 
-
-	<!--<footer class = "footer">
-		<div class = "page">
-		<div class = "footer__logo">
-			<img src = "img/logo-small.png" alt = "Лого">
-		</div>
-
-		<div class = "footer-bottom">
-			<div class = "contact-info">
-
-				<p class = "contact-info__header">Наши контакты:</p>
-				<br>
-				<p class = "contact-info__text">Телефон: 8 (495) 142-0013</p>
-				<p class = "contact-info__text">По вопросам заказов: <a href= "mailto:z@yamogu.ru">z@yamogu.ru</a></p>
-				<p class = "contact-info__text">По вопросам оптового сотрудничества: <a href = "mailto:opt@yamogu.ru">opt@yamogu.ru</a></p>
-				<p class = "contact-info__text">Желаете с нами пообщаться: <a href = "mailto:info@yamogu.ru">info@yamogu.ru</a></p>
-			</div>
-
-			<ul class = "footer__link-list">
-				<li><a class = "footer__link" href = "#">Доставка и оплата</a></li>
-				<li><a class = "footer__link" href = "#">Контактная информация</a></li>
-			</ul>
-
-			<ul class = "footer__link-list">
-				<li><a class = "footer__link" href = "#">О компании</a></li>
-				<li><a class = "footer__link" href = "#">Новости</a></li>
-				<li><a class = "footer__link" href = "#">Статьи</a></li>
-			</ul>
-
-			<div class = "social-networks social-networks_footer">
-				<p class = "social-networks__header">Присоединяйтесь к нам</p>
-				<a class = "social-networks__link" href = "https://instagram.com/yamogu.ru">
-				<img src="img/inst.png" alt="Инстаграм">
-				</a>
-				<a class = "social-networks__link" href = "https://vk.com/yamogu_razvitie">
-				<img src="img/vk.png" alt="ВКонтакте">
-					</a>
-				</div>
-		</div>
-		</div>
-	</footer>-->
-
-
-
-
+<script src = "js/lib/jquery-3.3.1.min.js"></script>
+<script src = "js/main.js"></script>
 
 </body>
 </html>

@@ -16,12 +16,78 @@
 }
 }*/
 
-
+@media (max-width:1037px) {
+	.card-detail__container-left {
+		margin-bottom:63px;
+	}
+}
 
 
 @media (max-width:710px) {
-	.menu {
-		order:2;
+	.menu, .contacts {
+		
 		display:none;
 	}
+
+	.content-section {
+		margin-top:10px;
+	}
+
+	.menu__link {
+		margin-bottom:35px;
+	}
+
+	.burger-button {
+		display:block;
+	}
+
+	.hamburger {
+		display:block;
+	}
+
+	.burger-menu_show {
+  		display:block;
+	}
+	
+	.header__logo {
+		width:118px;
+		height:110px;
+	}
+
+	.header-shadow_show {
+  		display:block;
+	}
+
+	.contacts_mobile {
+	    display:block;
+	}
+
+	.footer-bottom {
+		flex-direction:column;
+	}
+
+	.footer {
+		padding-top:25px;
+		padding-left:0px;
+	}
+
+	.social-networks_footer {
+  		text-align:left;
+  		margin:0;
+  		align-self:flex-start;
+	}
+
+	.footer__logo {
+		margin-bottom:25px;
+	}
+
+	.contact-info {
+		margin-left:0;
+		margin-bottom:50px;
+	}	
+
+	.card-detail__container-right {
+		padding-left:15px;
+	}
+
 }

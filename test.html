@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style>
+	ul.leaders {
+    max-width: 40em;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none}
+ul.leaders li:before {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content:
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "
+ ". . . . . . . . . . . . . . . . . . . . "}
+ul.leaders span:first-child {
+    padding-right: 0.33em;
+    background: white}
+ul.leaders span + span {
+    float: right;
+    padding-left: 0.33em;
+    background: white}
+
+.flex-string {
+	display:flex;
+	max-width:900px;
+
+}
+
+.left-span {
+	align-self:flex-start;
+	max-width:30%;
+	overflow:hidden;
+}
+
+.dots {
+	align-self:flex-start;
+	overflow:hidden;
+	
+}
+
+.right-span {
+
+}
+
+.left-part {
+	display:flex;
+	align-self:flex-start;
+	max-width:200px;
+}
+
+.left-span:after {
+	content:"..............................................................................................................................................................................................";
+	overflow:hidden;
+}
+
+</style>
+
+</head>
+<body>
+	
+	<ul class=leaders>
+<li><span>Salmon Ravioli</span>
+ <span></span>
+<li><span>Fried Calamari</span>
+ <span></span>
+<li><span>Almond Prawn Cocktail</span>
+ <span>7.95</span>
+<li><span>Bruschetta</span>
+ <span>5.25</span>
+<li><span>Margherita Pizza</span>
+ <span>12312312310.95</span>
+</ul>
+
+<br>
+<br>
+<br>
+
+<!--<div class = "flex-string">
+	<span class = "left-span">1</span>
+	<span class = "dots">......................................................................................................................................................</span>
+	<span class = "right-span">right-span</span>
+</div>
+
+<div class = "flex-string">
+	<span class = "left-span">12</span>
+	<span class = "dots">......................................................................................................................................................</span>
+	<span class = "right-span">longright-span</span>
+</div>
+
+<div class = "flex-string">
+	<span class = "left-span">13</span>
+	<span class = "dots">......................................................................................................................................................</span>
+	<span class = "right-span">verylongright-span</span>
+</div>
+
+<div class = "flex-string">
+	<div class = "left-part">
+		<span class = "left-span">123</span>
+		<span class = "dots">..............................................................................................................................................................................................</span>
+	</div>
+	<span class = "right-span">value1</span>
+</div>
+<div class = "flex-string">
+	<div class = "left-part">
+		<span class = "left-span">123</span>
+		<span class = "dots">..............................................................................................................................................................................................</span>
+	</div>
+	<span class = "right-span">value1verylong</span>
+</div>
+
+<div class = "flex-string">
+	<div class = "left-part">
+		<span class = "left-span">123123</span>
+		<span class = "dots">..............................................................................................................................................................................................</span>
+	</div>
+	<span class = "right-span">value1</span>
+</div>
+
+<div class = "flex-string">
+	<div class = "left-part">
+		<span class = "left-span">123123</span>
+		<span class = "dots">..............................................................................................................................................................................................</span>
+	</div>
+	<span class = "right-span">value with multiple words that cannot fit into the container</span>
+</div>-->
+
+<div class = "flex-string">
+	
+		<span class = "left-span">123123</span>
+	
+	<span class = "right-span">value with multiple words that cannot fit into the container</span>
+</div>
+
+<div class = "flex-string">
+	
+		<span class = "left-span">123</span>
+	
+	<span class = "right-span">value</span>
+</div>
+
+<div class = "flex-string">
+	
+		<span class = "left-span">123ddddddddddddddddd</span>
+	
+	<span class = "right-span">value2313</span>
+</div>
+
+</body>
+</html>
+
+
