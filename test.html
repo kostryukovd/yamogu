@@ -60,27 +60,65 @@ ul.leaders span + span {
 	overflow:hidden;
 }
 
+
+.flex-str {
+	display:flex;
+	
+}
+
+.sp1 {
+	align-self:flex-start;
+
+}
+
+.sp2 {
+	flex-grow:2;
+	background:url("img/dot.svg");
+	background-position:bottom;
+	background-repeat:repeat-x;
+	/*border-bottom:1px dotted black;*/
+}
+
+.sp3 {
+	/*align-self:flex-start;*/
+}
+
+.left-div {
+		max-width:500px;
+	width:50%;
+	display:flex;
+	align-self:flex-start;
+}
 </style>
 
 </head>
 <body>
 	
-	<ul class=leaders>
-<li><span>Salmon Ravioli</span>
- <span></span>
-<li><span>Fried Calamari</span>
- <span></span>
-<li><span>Almond Prawn Cocktail</span>
- <span>7.95</span>
-<li><span>Bruschetta</span>
- <span>5.25</span>
-<li><span>Margherita Pizza</span>
- <span>12312312310.95</span>
-</ul>
 
-<br>
-<br>
-<br>
+
+<div class = "flex-str">
+<div class = "left-div">
+	<span class = "sp1">Объект1</span>
+	<span class = "sp2"></span>
+</div>
+	<span class = "sp3">Цена1</span>
+</div>
+
+<div class = "flex-str">
+<div class = "left-div">
+	<span class = "sp1">Объект111111</span>
+	<span class = "sp2"></span>
+</div>
+	<span class = "sp3">Цена 11111 22222</span>
+</div>
+
+
+<div>
+	<a href = "ya.ru">
+		<img src = "img/item1.png">
+	</a>
+</div>
+
 
 <!--<div class = "flex-string">
 	<span class = "left-span">1</span>
@@ -131,7 +169,7 @@ ul.leaders span + span {
 	<span class = "right-span">value with multiple words that cannot fit into the container</span>
 </div>-->
 
-<div class = "flex-string">
+<!--<div class = "flex-string">
 	
 		<span class = "left-span">123123</span>
 	
@@ -151,6 +189,24 @@ ul.leaders span + span {
 	
 	<span class = "right-span">value2313</span>
 </div>
+
+	<ul class=leaders>
+<li><span>Salmon Ravioli</span>
+ <span></span>
+<li><span>Fried Calamari</span>
+ <span></span>
+<li><span>Almond Prawn Cocktail</span>
+ <span>7.95</span>
+<li><span>Bruschetta</span>
+ <span>5.25</span>
+<li><span>Margherita Pizza</span>
+ <span>12312312310.95</span>
+</ul>
+
+<br>
+<br>
+<br>-->
+
 
 </body>
 </html>

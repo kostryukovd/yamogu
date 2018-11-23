@@ -97,7 +97,7 @@
 	<div class = "text-container">
 	<div class = "bread-crumbs">
 		<a class = "bread-crumbs__item" href = "index.html">Главная</a>
-		<a class = "bread-crumbs__item" href = "index.html">Рабочие тетради для возраста 3-4 года</a>
+		<a class = "bread-crumbs__item" href = "3-4years.html">Рабочие тетради для возраста 3-4 года</a>
 		<span class = "bread-crumbs__item">Я МОГУ вырезать и клеить! 3-4 года</span>
 	</div>
 	</div>
@@ -165,7 +165,7 @@
 					<span class = "card-detail__switch-item">Характеристики</span>
 				</div>
 				<!--<div class = "card-detail__description">-->
-				<div class = "card-detail__switch-content card-detail__switch-content_hidden">
+				<div class = "card-detail__switch-content">
 					<ul class="text-list">
 						<li class="text_regular">Заинтересуется занятиями, научится получать от них удовольствие.</li>
 						<li class="text_regular">Станет более любознательным.</li>
@@ -177,7 +177,7 @@
 						<li class="text_regular">Станет более внимательным, научится концентрироваться на задании.</li>
 					</ul>
 				</div>
-			<div class = "card-detail__switch-content">
+			<!--<div class = "card-detail__switch-content card-detail__switch-content_hidden">
 				<div class = "card-detail__spec-string">
 					<span class = "card-detail__spec-name">Бумага</span>
 					<span class = "card-detail__spec-value">матовая мелованная</span>
@@ -202,9 +202,51 @@
 					<span class = "card-detail__spec-name">Размеры</span>
 					<span class = "card-detail__spec-value">305х210х8 мм</span>
 				</div>
+			</div>-->
+			<div class = "card-detail__switch-content card-detail__switch-content_hidden">
+				<div class = "card-detail__spec-string">
+					<div class = "card-detail__spec-left">
+					<span class = "card-detail__spec-name">Бумага</span>
+					<span class = "card-detail__leader-dots"></span>
+					</div>
+					<span class = "card-detail__spec-value">матовая мелованная</span>
+				</div>
+				<div class = "card-detail__spec-string">
+					<div class = "card-detail__spec-left">
+					<span class = "card-detail__spec-name">Наклейки</span>
+					<span class = "card-detail__leader-dots"></span>
+					</div>
+					<span class = "card-detail__spec-value">75 штук, многоразовые с глянцевой ламинацией</span>
+				</div>
+				<div class = "card-detail__spec-string">
+					<div class = "card-detail__spec-left">
+					<span class = "card-detail__spec-name">Страниц</span>
+					<span class = "card-detail__leader-dots"></span>
+					</div>
+					<span class = "card-detail__spec-value">64</span>
+				</div>
+				<div class = "card-detail__spec-string">
+					<div class = "card-detail__spec-left">
+					<span class = "card-detail__spec-name">Крепление</span>
+					<span class = "card-detail__leader-dots"></span>
+					</div>
+					<span class = "card-detail__spec-value">пружина</span>
+				</div>
+				<div class = "card-detail__spec-string">
+					<div class = "card-detail__spec-left">
+					<span class = "card-detail__spec-name">Масса</span>
+					<span class = "card-detail__leader-dots"></span>
+					</div>
+					<span class = "card-detail__spec-value">430 г</span>
+				</div>
+				<div class = "card-detail__spec-string">
+					<div class = "card-detail__spec-left">
+					<span class = "card-detail__spec-name">Размеры</span>
+					<span class = "card-detail__leader-dots"></span>
+					</div>
+					<span class = "card-detail__spec-value">305х210х8 мм</span>
+				</div>
 			</div>
-
-
 			</div>
 		</div>
 	</section>
@@ -343,7 +385,7 @@
 
 				<p class = "contact-info__header">Рабочие тетради для детей</p>
 				
-				<p class = "footer-contacts__phone">8 (495) 142-0013</p>
+				<a class = "footer-contacts__phone" href = "tel:+74951420013">8 (495) 142-0013</a>
 				<p class = "footer-contacts__worktime">По будням с 9 до 17</p>
 				
 				<!--<p class = "contact-info__text">По вопросам заказов: <a href= "mailto:z@yamogu.ru"><b>z@yamogu.ru</b></a></p>-->
@@ -376,31 +418,7 @@
 <script src = "js/main.js"></script>
 
 
-<script>
 
-var hidden;
-var displayed;
-
-$('.card-detail__switch-content').each(function(){
-
-	if($(this).hasClass('card-detail__switch-content_hidden')) {
-		hidden = $(this);
-	} else { displayed = $(this)}
-
-});
-
-
-	$('.card-detail__switch-item').click(function(){
-
-		if (!($(this).hasClass('card-detail__switch-item_active'))){
-			console.log('active');
-			displayed.css('display','none');
-			hidden.css('display','block');
-		}
-
-	});
-
-</script>
 
 
 </body>

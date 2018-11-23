@@ -16,10 +16,21 @@
 }
 }*/
 
-@media (max-width:1037px) {
+@media (max-width:1058px) {
 	.card-detail__container-left {
 		margin-bottom:63px;
 	}
+
+	.card-detail__container-right {
+		margin:0 auto;
+		flex-grow:0;
+	}
+
+	.card-detail__switch {
+		text-align:center;
+	}
+
+
 }
 
 
@@ -89,5 +100,26 @@
 	.card-detail__container-right {
 		padding-left:15px;
 	}
+
+}
+
+@media (max-width:480px) {
+	.owl-carousel .owl-nav .owl-prev {
+
+  transform:scale(0.5);
+  left:-10%;
+  margin-top:0;
+}
+	.owl-carousel .owl-nav .owl-next {
+
+  transform:scale(0.5);
+  right:-10%;
+  margin-top:0;
+}
+
+.card-detail__carousel {
+    width: 219px;
+    height: 306px;
+}
 
 }

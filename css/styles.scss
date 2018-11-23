@@ -86,8 +86,10 @@ body {
   margin-bottom:20px;
 }
 
-.social-networks__link {
-  word-spacing: 20px;
+.social-networks__link:first-of-type {
+  //word-spacing: 20px;
+  margin-right:20px;
+  word-spacing:0;
 }
 
 .social-networks__header {
@@ -416,13 +418,14 @@ body {
   padding-top:81px;
   padding-bottom:61px;*/
   //align-self:center;
-  margin: 0 40px;
+  margin: 0 100px;
   padding-top:80px;
     
   //margin-top: 27px;
 }
 .card-detail__container-right {
 //margin-top: 27px;
+flex-grow:1;
 }
 
 .card-detail__carousel {
@@ -445,8 +448,9 @@ body {
   color:$red-color;
   font-size:40px;
     margin-top:-20px;
-
 }
+
+
 
 .owl-carousel .owl-nav .owl-next {
   position: absolute;
@@ -486,7 +490,7 @@ body {
   display:none;
 }
 
-.card-detail__spec-string {
+/*.card-detail__spec-string {
   display:flex;
   overflow:hidden;
   //max-width:900px;
@@ -511,7 +515,43 @@ body {
   align-self:flex-start;
   color:$grey-text-color;
 
+}*/
+
+.card-detail__spec-string {
+  display:flex;
+    margin-bottom:35px;
+
+  
 }
+
+.card-detail__spec-name {
+  align-self:flex-start;
+
+}
+
+.card-detail__leader-dots {
+  flex-grow:2;
+  background:url("../img/dot.svg");
+  background-position:bottom;
+  background-repeat:repeat-x;
+  /*border-bottom:1px dotted black;*/
+}
+
+.card-detail__spec-value {
+  /*align-self:flex-start;*/
+    color:$grey-text-color;
+
+}
+
+.card-detail__spec-left {
+    max-width:500px;
+    min-width:130px;
+  width:30%;
+  display:flex;
+  align-self:flex-start;
+}
+
+
 
 .order-section {
     margin-top:83px;
@@ -560,25 +600,39 @@ body {
   display:none;
   height:100%;
   z-index:2;
+display:none;
+}
+
+@keyframes showNav {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes show-header-shadow {
+  from {opacity: 0;}
+  to {opacity: 0.6;}
 }
 
 .header-shadow {
-  background-color:rgba(26, 26, 26,0.5);
-  //background-color:rgb(26, 26, 26);
+  //background-color:rgba(26, 26, 26,0.5);
+  background-color:rgb(26, 26, 26);
   height:145px;
   position:absolute;
   top:0;
   left:0;
   right:0;
   display:none;
+  opacity:0;
 }
 
 .header-shadow_show {
   display:none;
+  animation:show-header-shadow 300ms linear both;
 }
 
 .burger-menu_show {
   display:none;
+    animation: showNav 300ms ease-in-out both;
 }
 
 .hamburger {
@@ -606,7 +660,9 @@ body {
   margin-bottom:50px;
 }
 
-
+.scroll-disable {
+  overflow:hidden;
+}
 
 
 

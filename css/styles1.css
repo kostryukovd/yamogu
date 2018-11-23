@@ -58,10 +58,12 @@
   .card-detail__container-left {
     margin-bottom: 63px; }
   .card-detail__container-right {
-    margin: 0 auto;
-    flex-grow: 0; }
+    margin: 0 auto; }
   .card-detail__switch {
-    text-align: center; } }
+    text-align: center; }
+  .card-detail__switch-content {
+    flex-grow: 0;
+    margin: 0 auto; } }
 
 @media (max-width: 710px) {
   .menu, .contacts {
@@ -643,10 +645,12 @@ body {
   .card-detail__container-left {
     margin-bottom: 63px; }
   .card-detail__container-right {
-    margin: 0 auto;
-    flex-grow: 0; }
+    margin: 0 auto; }
   .card-detail__switch {
-    text-align: center; } }
+    text-align: center; }
+  .card-detail__switch-content {
+    flex-grow: 0;
+    margin: 0 auto; } }
 
 @media (max-width: 710px) {
   .menu, .contacts {
