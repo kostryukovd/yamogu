@@ -660,8 +660,10 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0; }
   .links-block a {
-    color: blue;
-    text-decoration: underline; }
+    text-decoration: underline;
+    color: #FF3C3C; }
+  .links-block div {
+    margin: 10px 0; }
 
 .card-detail {
   border-bottom-right-radius: 0;
@@ -669,6 +671,18 @@ body {
 
 .card-detail__text_hidden {
   display: none; }
+
+.button_red {
+  border: 1px solid #FF3C3C; }
+
+.button_active {
+  background: white;
+  color: #FF3C3C;
+  cursor: default; }
+
+.owl-carousel.owl-drag .owl-item {
+  background: white;
+  border: none; }
 
 /*@media (max-width:1069px) {
 	.item-card:nth-of-type(4n) {

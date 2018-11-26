@@ -666,9 +666,16 @@ display:none;
 
 .links-block {
   a {
-    color:blue;
+    
     text-decoration:underline;
+    color:$red-color;
+   
   }
+
+  div {
+     margin:10px 0;
+  }
+
   border-left:1px solid $grey-color;
   border-right:1px solid $grey-color;
   border-bottom:1px solid $grey-color;
@@ -686,6 +693,21 @@ display:none;
 
 .card-detail__text_hidden {
   display:none;
+}
+
+.button_red {
+  border:1px solid $red-color;
+}
+
+.button_active {
+  background:white;
+  color:$red-color;
+  cursor:default;
+}
+
+.owl-carousel.owl-drag .owl-item {
+  background:white;
+  border:none;
 }
 
 @import "_media";
