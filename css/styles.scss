@@ -361,7 +361,7 @@ body {
 .card-detail {
   border: 0.5px solid $grey-color;
   border-radius: 3px;
-  margin-bottom: 80px;
+  //margin-bottom: 80px;
   padding-bottom:61px;
 }
 
@@ -398,7 +398,7 @@ body {
   //z-index:-1;
 }
 
-.card-detail__container:before {
+.card-detail__container_new:before {
   content:'Новинка';
   text-align:center;
   padding:6px 18px;
@@ -664,10 +664,29 @@ display:none;
   overflow:hidden;
 }
 
+.links-block {
+  a {
+    color:blue;
+    text-decoration:underline;
+  }
+  border-left:1px solid $grey-color;
+  border-right:1px solid $grey-color;
+  border-bottom:1px solid $grey-color;
+  border-radius:3px;
+  margin-bottom: 80px;
+  padding:15px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
 
+.card-detail {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
 
-
-
+.card-detail__text_hidden {
+  display:none;
+}
 
 @import "_media";
 
