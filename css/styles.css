@@ -260,7 +260,9 @@ body {
     border: 1px solid #1A1A1A; }
 
 .item-card__img {
-  margin-bottom: 34px; }
+  margin-bottom: 34px;
+  transform: scale(1);
+  transition: all 0.3s; }
 
 .item-card__title {
   font-family: "Roboto", Arial, sans-serif;

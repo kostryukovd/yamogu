@@ -147,7 +147,7 @@ body {
   border-radius:3px;
   padding-top:60px;
   padding-bottom:25px;
-
+  
   max-width: 260px;
   width:100%;
   //margin-right:auto;
@@ -166,6 +166,8 @@ body {
 
 .item-card__img {
   margin-bottom:34px;
+  transform:scale(1);
+  transition:all 0.3s;
 }
 
 .item-card__title {
